@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+
+
+  <view   class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+
+   
+    <view  wx:for="{{buttonArray}}" hover="{{is}}">
+      <button type="{{item.type}}" id="{{item.id}}" class="button" bindtap="{{item.even}}">{{item.text}}
+      </button>
+    </view>
+
+</view>

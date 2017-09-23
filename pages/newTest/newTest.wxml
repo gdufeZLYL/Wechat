@@ -1,0 +1,40 @@
+<view class="newGame-container">
+    <view class="game-progress">
+        <progress percent="{{progress/10}}" stroke-width="4" color="rgb(52,164,194)"/>
+    </view>
+    <view class="game-text"  animation="{{shaking}}">
+        <text class="font" >正确 {{rightAmount}} 错误 {{wrongAmount}}</text>
+    </view>
+    <view wx:if="{{isPlus}}" class="game-text">
+        <text class="font-number">{{firstNumber}} + {{secondNumber}} = ?</text>
+    </view>
+    <view wx:else class="game-text">
+        <text class="font-number">{{firstNumber}} - {{secondNumber}} = ?</text>
+    </view>
+
+    <view class="flex-wrp" style="flex-direction:row;">
+        <view class="flex-item" >  
+            <button class="button-answer " style="background-color: rgb(55,176,115);" hover-class="button-hover-1"
+            bindtap="judgeNumber"
+            id="{{answerArray[0]}}"><text class="answer-Size">{{answerArray[0]}}</text></button>
+        </view>
+        <view class="flex-item" style="margin-left: 30rpx">
+            <button class="button-answer" style="background-color: rgb(255,145,190);" hover-class="button-hover-1"
+            bindtap="judgeNumber"
+            id="{{answerArray[1]}}"><text class="answer-Size">{{answerArray[1]}}</text></button>
+        </view>
+    </view>
+    <view class="flex-wrp" style="flex-direction:row ;padding-top:0rpx;">
+        <view class="flex-item" >  
+            <button class="button-answer" style="background-color:rgb(134,215,255)"
+            hover-class="button-hover-1"
+            bindtap="judgeNumber"
+            id="{{answerArray[2]}}"><text class="answer-Size">{{answerArray[2]}}</text></button>
+        </view>
+        <view class="flex-item" style="margin-left: 30rpx">
+            <button class="button-answer" style="background-color:rgb(228,220,87)" hover-class="button-hover-1"
+            bindtap="judgeNumber"
+            id="{{answerArray[3]}}" ><text class="answer-Size">{{answerArray[3]}}</text></button>
+        </view>
+    </view>
+</view>

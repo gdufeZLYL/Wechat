@@ -1,0 +1,20 @@
+<view class="container-end">
+
+    <view>
+        <canvas class="cir size-50"   canvas-id="Star"> 
+          </canvas> 
+    </view>
+
+    <view>
+        <text>答对{{rightAmount}}道，答错{{wrongAmount}}道</text>
+    </view>
+    <view>
+        <text>{{text}}</text>
+    </view>
+
+    <view>
+        <button type="primary" bindtap="continute">继续测试</button>
+        <button bindtap="comeBack">回到首页</button>
+    </view>
+
+</view>

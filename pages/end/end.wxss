@@ -1,0 +1,15 @@
+.container-end {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 115rpx 0;
+  box-sizing: border-box;
+} 
+
+button {
+  width: 700rpx;
+  height: 88rpx;
+  margin: 20rpx;
+}

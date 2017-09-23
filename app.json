@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/newTest/newTest",
+    "pages/end/end"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4ED2B8",
+    "navigationBarTitleText": "数学计算大挑战",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -28,6 +28,7 @@ App({
   globalData:{
     userInfo:null,
   },
+    //erererererere
   numberSize:10,
   timeSize:1,
   playRightMusic:function(){

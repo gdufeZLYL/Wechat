@@ -6,6 +6,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
   },
+    //aaaaaa
   getUserInfo:function(cb){
     var that = this
     if(this.globalData.userInfo){
@@ -27,6 +28,7 @@ App({
   globalData:{
     userInfo:null,
   },
+    //erererererere
   numberSize:10,
   timeSize:1,
   playRightMusic:function(){
